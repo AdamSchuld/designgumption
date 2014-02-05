@@ -1,1 +1,1 @@
-function test(){return"This is built from the _/components/js/script.js file"}
+function other(){return"hello"}function test(){return"This is built from the _/components/js/script.js file"}
