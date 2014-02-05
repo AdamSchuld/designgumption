@@ -1,0 +1,1 @@
+function test(){return"This is built from the _/components/js/script.js file"}
