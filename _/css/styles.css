@@ -55,7 +55,85 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-/* line 1, ../components/sass/_modules.scss */
+/* line 3, ../components/sass/_base.scss */
 body {
   font-family: Raleway, sans-serif;
-  background: #3e3d4d; }
+  font-size: 1.2rem;
+  line-height: 160%;
+  color: #3e3d4d; }
+
+/* line 10, ../components/sass/_base.scss */
+span {
+  font-weight: bold; }
+
+/* line 15, ../components/sass/_base.scss */
+h1 {
+  font-family: Federo, sans-serif;
+  font-size: 40px;
+  letter-spacing: 4.4px; }
+
+/* line 21, ../components/sass/_base.scss */
+h2 {
+  font-size: 34px; }
+
+/* line 25, ../components/sass/_base.scss */
+p {
+  font-size: 22px;
+  line-height: 34px; }
+
+/* line 31, ../components/sass/_base.scss */
+header {
+  color: #535267;
+  font-size: 16px; }
+
+/* line 36, ../components/sass/_base.scss */
+header ul {
+  float: right; }
+
+/* line 40, ../components/sass/_base.scss */
+header ul li {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+/* line 49, ../components/sass/_base.scss */
+.eye-catcher {
+  margin: 0 auto;
+  width: 480px;
+  background: url("../images/invertedTriangle-big.png") no-repeat;
+  background-position: 50px 0;
+  height: 400px;
+  position: relative;
+  margin-top: 80px; }
+
+/* line 59, ../components/sass/_base.scss */
+.eye-catcher img {
+  position: absolute;
+  top: -20px;
+  left: 110px;
+  width: 205px;
+  height: 205px;
+  margin: 0 auto; }
+
+/* line 68, ../components/sass/_base.scss */
+.eye-catcher h1 {
+  position: absolute;
+  bottom: 140px;
+  display: block;
+  text-align: center; }
+
+/* line 75, ../components/sass/_base.scss */
+.explanation {
+  width: 80%;
+  margin: 0 auto; }
+
+/* line 80, ../components/sass/_base.scss */
+.explanation h2 {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 500; }
+
+/* line 1, ../components/sass/_layout.scss */
+header {
+  width: 100%; }
