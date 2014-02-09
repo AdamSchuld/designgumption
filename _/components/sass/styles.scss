@@ -1,8 +1,10 @@
 @import "compass";
-@import "compass/reset";
 @import "susy";
 
+/* Partials */
 @import "variables";
+@import "normalize";
+@import "fonts";
 @import "mixins";
 @import "base";
 @import "layout";

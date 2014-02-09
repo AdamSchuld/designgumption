@@ -1,3 +1,27 @@
-header {
-    width: 100%;
+@import "susy";
+$total-columns : 12;              // a 12-column grid
+$column-width  : 5em;             // each column is 5em wide
+$gutter-width  : 1em;             // 1em gutters between columns
+$grid-padding  : $gutter-width;   // grid-padding equal to gutters
+$border-box-sizing : true;
+
+// Breakpoint variables
+// ====================================================================
+$M: 47em; // roughly speaking, around 750px
+$L: 75em; // roughly speaking, around 1200px
+
+
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+[class^="inner"] {
+     @include container;
+     @include susy-grid-background;
+}
+
+
+
