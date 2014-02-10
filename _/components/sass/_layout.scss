@@ -4,6 +4,8 @@ $column-width  : 5em;             // each column is 5em wide
 $gutter-width  : 1em;             // 1em gutters between columns
 $grid-padding  : $gutter-width;   // grid-padding equal to gutters
 $border-box-sizing : true;
+$container-style : fluid;
+$container-width : 90%;
 
 // Breakpoint variables
 // ====================================================================
@@ -23,5 +25,25 @@ $L: 75em; // roughly speaking, around 1200px
      @include susy-grid-background;
 }
 
+.panel {
+  background: blue;
+}
 
+.panel ul {
+    border-top: 2px solid red;
+    width: 100%;
+    padding: 0;
+}
 
+.panel ul li {
+    line-height: 1.5;
+    display: list-item;
+    list-style: none;
+    padding: 0;
+}
+
+.panel li a {
+    color: white;
+    display: block;
+    padding: 1em;
+}
