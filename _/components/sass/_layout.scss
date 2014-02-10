@@ -9,10 +9,13 @@ $container-width : 90%;
 
 // Breakpoint variables
 // ====================================================================
-$M: 47em; // roughly speaking, around 750px
-$L: 75em; // roughly speaking, around 1200px
-
-
+// Breakpoint variables
+// ====================================================================
+$XS: 22em; // roughly speaking, around 288px wide with 16px body font
+$S: 30em; // roughly speaking, around 480px wide with 16px body font
+$M: 40em; // roughly speaking, around 640px wide with 16px body font
+$L: 62em; // roughly speaking, around 998px wide with 16px body font
+$XL: 80em; // roughly speaking, around 1280px wide with 16px body font
 
 *{
   -webkit-box-sizing: border-box;
@@ -22,28 +25,17 @@ $L: 75em; // roughly speaking, around 1200px
 
 [class^="inner"] {
      @include container;
-     @include susy-grid-background;
+     //@include susy-grid-background;
 }
 
-.panel {
-  background: blue;
-}
-
-.panel ul {
-    border-top: 2px solid red;
-    width: 100%;
-    padding: 0;
-}
-
-.panel ul li {
-    line-height: 1.5;
-    display: list-item;
-    list-style: none;
-    padding: 0;
-}
-
-.panel li a {
-    color: white;
-    display: block;
-    padding: 1em;
+.innerContent {
+    @include MQ(XSplus){
+        width: 95%;
+    }
+    @include MQ(Mplus){
+        width: 80%;
+    }
+    @include MQ(Lplus){
+        width: 70%;
+    }
 }

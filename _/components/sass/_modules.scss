@@ -5,12 +5,22 @@ h1 {
 }
 
 h2 {
-    font-size: 34px;
+    font-size: 22px;
 }
 
 p {
     font-size: 18px;
-    line-height: 34px;
+    line-height: 2.2;
+    @include MQ(Mneg){
+       display: none;
+    }
+    @include MQ(Mplus){
+       font-size: 16px;
+    }
+    @include MQ(XLplus){
+       font-size: 19px;
+    }
+
 }
 
 
@@ -37,34 +47,125 @@ header ul li {
 
 }*/
 
-.eye-catcher {
-    margin: 0 auto;
-    width: 480px;
-    background: url('../images/invertedTriangle-big.png') no-repeat;
-    background-position: 50px 0;
-    height: 400px;
-    position: relative;
-    margin-top: 80px;
+/*.innerContent {
+    @include MQ(XSplus){
+        width: 95%;
+    }
+    @include MQ(Mplus){
+        width: 80%;
+    }
+    @include MQ(Lplus){
+        width: 70%;
+    }
+}*/
+
+
+.panel {
+  background: blue;
+  z-index: 9999;
 }
 
-.eye-catcher img {
-    position: absolute;
-    top: -20px;
-    left: 110px;
+.panel ul {
+    border-top: 2px solid red;
+    width: 100%;
+    padding: 0;
+}
+
+.panel ul li {
+    line-height: 1.5;
+    display: list-item;
+    list-style: none;
+    padding: 0;
+}
+
+.panel li a {
+    color: white;
+    display: block;
+    padding: 1em;
+}
+
+
+.eye-catcher {
+    margin: 0 auto;
+    position: relative;
+    margin-top: 80px;
+    height: auto;
+    @include MQ(XSplus){
+       height: 144px;
+    }
+    @include MQ(Mplus){
+       height: 216px;
+    }
+    @include MQ(XLplus){
+       height: 288px;
+    }
+
+}
+
+.inverted-triangle {
+    position: relative;
+    margin: 0 auto;
+    @include MQ(XSplus){
+        width: 210px;
+        height: 144px;
+    }
+    @include MQ(Mplus){
+        width: 315px;
+        height: 216px;
+    }
+    @include MQ(XLplus){
+        width: 420px;
+        height: 288px;
+    }
+}
+
+.eye-catcher img.logo {
+    position: relative;
+    top: -220px;
+    display: block;
+    margin: 0 auto;
     width: 205px;
     height: 205px;
-    margin: 0 auto;
+    @include MQ(XSplus){
+        width: 80px;
+        height: 80px;
+          top: -150px;
+    }
+    @include MQ(Mplus){
+        width: 135px;
+        height: 135px;
+        top: -230px;
+    }
+    @include MQ(XLplus){
+        width: 170px;
+        height: 170px;
+        top: -310px;
+    }
 }
 
 .eye-catcher h1 {
-    position: absolute;
-    bottom: 140px;
+    position: relative;
+    bottom: 85px;
+    margin: 0 auto;
     display: block;
     text-align: center;
+    @include MQ(XSplus){
+        font-size: 18px;
+        bottom: 135px;
+    }
+    @include MQ(Mplus){
+        font-size: 24px;
+         bottom: 195px;
+    }
+    @include MQ(XLplus){
+        font-size: 34px;
+        bottom: 265px;
+    }
 }
 
 .explanation {
-    margin: 0 auto;
+    margin: 40px auto;
+
 }
 
 .explanation h2 {
@@ -72,6 +173,16 @@ header ul li {
     text-align: center;
     margin-top: 40px;
     font-weight: 500;
+     @include MQ(XSplus){
+        font-size: 16px;
+    }
+    @include MQ(Mplus){
+        font-size: 22px;
+    }
+    @include MQ(XLplus){
+        font-size: 31px;
+        bottom: 265px;
+    }
 }
 
 

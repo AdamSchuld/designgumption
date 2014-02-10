@@ -11,6 +11,7 @@
     <title>Design Gumption</title>
     <link rel="stylesheet" href="_/css/styles.css">
     <script src="_/js/modernizr.2.7.1.min.js"></script>
+    <link rel="icon" type="image/png" href="_/images/favicon.png">
 </head>
 <body>
     <nav id="menu" class="panel" role="navigation">
@@ -30,9 +31,12 @@
 
 
     <div class="innerContent">
-       <div class="mainContent" role="main">
+       <div class="mainContent" role="main" id="home">
          <div class="eye-catcher">
-           <img src="_/images/dg-logo.svg" alt="Design Gumption Logo">
+            <div class="inverted-triangle">
+                <img src="_/images/invertedTriangle.png" alt="Inverted Triangle">
+            </div>
+           <img class="logo" src="_/images/dg-logo.svg" alt="Design Gumption Logo">
            <h1>DESIGN GUMPTION</h1>
          </div>
 
@@ -40,11 +44,19 @@
             <p class="definition"><span>Gumption</span> is one of those words that is difficult to pin an exact definition too. The word has vague Scottish origins and has been used colloquially since the 18th century. The most apt characterization of the word is a strange cocktail of ‘grit’, ‘composure’, and ‘resourcefulness’. I would argue that the word’s meaning extends even beyond that. Gumption is an understanding that a struggle will ensue and harboring an enthusiasm and resilience for the encounter. It’s an immersion in the complications; the smile that comes with adversity.
             </p>
             <h2>Gumption is what cultivates great design.</h2>
-
-
          </section>
         </div>
-       </div>
+        <div class="projects" id="projects">
+            <div>PROJECT SECTION</div>
+        </div>
+        <div class="about" id="about">
+            <div>ABOUT SECTION</div>
+        </div>
+        <div class="contact" id="hire">
+            <div>CONTACT SECTION</div>
+        </div>
+
+       </div> <!-- End innerContent -->
 
     <footer role="contentinfo">
         <div class="inner-footer">
@@ -54,6 +66,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="_/js/big-slide.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/2.1.0/jquery.imagesloaded.min.js"></script>
+    <script src="_/js/jquery-imagefill.js"></script>
     <script src="_/js/script.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
 
