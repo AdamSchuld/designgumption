@@ -6,5 +6,7 @@
         // Image fill responsive image handling
         $('.inverted-triangle').imagefill();
 
+        // Image fill teaser banner
+        $('.diagonal-banner').imagefill();
     });
 

@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".menu-link").bigSlide(),$(".inverted-triangle").imagefill()});
+$(document).ready(function(){$(".menu-link").bigSlide(),$(".inverted-triangle").imagefill(),$(".diagonal-banner").imagefill()});

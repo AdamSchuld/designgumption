@@ -10,10 +10,6 @@ h2 {
 
 p {
     font-size: 18px;
-    line-height: 2.2;
-    @include MQ(Mneg){
-       display: none;
-    }
     @include MQ(Mplus){
        font-size: 16px;
     }
@@ -88,13 +84,15 @@ header ul li {
 .eye-catcher {
     margin: 0 auto;
     position: relative;
-    margin-top: 80px;
+    margin-top: 30px;
     height: auto;
     @include MQ(XSplus){
        height: 144px;
+       margin-top: 10px;
     }
     @include MQ(Mplus){
        height: 216px;
+       margin-top: 20px;
     }
     @include MQ(XLplus){
        height: 288px;
@@ -163,6 +161,13 @@ header ul li {
     }
 }
 
+.definition {
+    line-height: 2.2;
+     @include MQ(Mneg){
+       display: none;
+    }
+}
+
 .explanation {
     margin: 40px auto;
 
@@ -173,6 +178,10 @@ header ul li {
     text-align: center;
     margin-top: 40px;
     font-weight: 500;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#3e3d4d), color-stop(31%,#3e3d4d), color-stop(96%,#7d7ca3)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #3e3d4d 0%,#3e3d4d 31%,#7d7ca3 96%); /* Chrome10+,Safari5.1+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
      @include MQ(XSplus){
         font-size: 16px;
     }
@@ -185,4 +194,107 @@ header ul li {
     }
 }
 
+#projects {
+    margin-top: 50px;
+    margin-bottom: 150px;
 
+    .diagonal-banner {
+        width: 100%;
+        left: 0;
+        height: 150px;
+        position: absolute;
+        overflow: hidden;
+
+    }
+    .circle-stories {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .circle-story {
+        float: left;
+        width: 325px;
+    }
+
+    .circle-container {
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .project-link:hover .circle{
+        border: 1px solid $limegreen;
+    }
+
+    .circle {
+        display:block;
+        overflow: hidden;
+        float:left;
+        padding: 30%;
+        left: 3em;
+        width:auto;
+        height:auto;
+        border-radius:50%;
+        -moz-border-radius:50%;
+        -webkit-border-radius:50%;
+        -khtml-border-radius: 50%;
+        border: 1px solid $deeppurple;
+        text-align:center;
+        position: relative;
+        margin: 0 auto;
+        transition-property: border;
+        transition-duration: 0.5s;
+
+            img {
+                position: absolute;
+                width: 100px;
+                height: 80px;
+                left: 25%;
+                top: 15%;
+            }
+
+            .project-title {
+                text-align: center;
+                width: 80%;
+                border-top: 1px solid $medpurple;
+                position: absolute;
+                bottom: 40px;
+                left: 10%;
+                padding-top: 11px;
+                font-size: 26px;
+                font-weight: 500;
+            }
+
+    }
+
+    .circle:before {
+        content: " ";
+        position: absolute;
+        top: 7px;
+        left: 7px;
+        right: 7px;
+        bottom: 7px;
+        border: 1px solid $lightgray;
+        border-radius:50%;
+        -moz-border-radius:50%;
+        -webkit-border-radius:50%;
+        -khtml-border-radius: 50%;
+    }
+
+    .brief {
+        position: relative;
+        font-weight: 500;
+        margin-top: 30px;
+    }
+
+
+
+}
+
+#about{
+    position: relative;
+}
+
+#contact{
+    position: relative;
+}
