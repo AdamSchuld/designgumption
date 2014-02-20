@@ -36,7 +36,7 @@
 
     // make sure container isn't position:static
     var containerPos = $container.css('position');
-    $container.css({'overflow':'hidden','position':(containerPos === 'static') ? 'relative' : containerPos});
+    $container.css({'overflow':'initial','position':(containerPos === 'static') ? 'relative' : containerPos});
 
     // set containerH, containerW
     $container.each(function() {

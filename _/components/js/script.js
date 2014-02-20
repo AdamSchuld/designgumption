@@ -7,6 +7,9 @@
         $('.inverted-triangle').imagefill();
 
         // Image fill teaser banner
-        $('.diagonal-banner').imagefill();
+        //$('.diagonal-banner').imagefill();
+
+        // Circle Image fill
+        $('.logo-container').imagefill();
     });
 

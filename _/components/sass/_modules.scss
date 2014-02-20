@@ -214,13 +214,29 @@ header ul li {
 
     .circle-story {
         float: left;
-        width: 325px;
+        width: 31%;
+        margin-right: 1.5em;
+        @include MQ(Mplus){
+            margin-right: 1em;
+        }
+    }
+
+    .circle-story:last-child{
+        margin-right: 0;
     }
 
     .circle-container {
         margin: 0 auto;
         overflow: hidden;
     }
+
+    .logo-container {
+        position: absolute;
+        height: 40%;
+        left: 56%;
+        top: 13%;
+    }
+
 
     .project-link:hover .circle{
         border: 1px solid $limegreen;
@@ -230,8 +246,8 @@ header ul li {
         display:block;
         overflow: hidden;
         float:left;
-        padding: 30%;
-        left: 3em;
+        padding: 33%;
+        left: 2em;
         width:auto;
         height:auto;
         border-radius:50%;
@@ -249,8 +265,6 @@ header ul li {
                 position: absolute;
                 width: 100px;
                 height: 80px;
-                left: 25%;
-                top: 15%;
             }
 
             .project-title {
@@ -258,11 +272,21 @@ header ul li {
                 width: 80%;
                 border-top: 1px solid $medpurple;
                 position: absolute;
-                bottom: 40px;
+                bottom: 18%;
                 left: 10%;
                 padding-top: 11px;
                 font-size: 26px;
                 font-weight: 500;
+                 @include MQ(XSplus){
+                    font-size: 16px;
+                }
+                @include MQ(Mplus){
+                    font-size: 20px;
+                    padding-top: 4px;
+                }
+                @include MQ(XLplus){
+                    font-size: 24px;
+                }
             }
 
     }
