@@ -813,25 +813,65 @@ header ul li {
     position: relative;
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 4em;
     float: left;
     text-align: center; }
-  /* line 379, ../components/sass/_modules.scss */
+  /* line 380, ../components/sass/_modules.scss */
   #about .circle-container {
     width: 45%;
     height: auto;
     position: absolute;
     top: 8%; }
-  /* line 386, ../components/sass/_modules.scss */
+  /* line 387, ../components/sass/_modules.scss */
   #about .circle {
     overflow: hidden; }
-    /* line 388, ../components/sass/_modules.scss */
+    /* line 389, ../components/sass/_modules.scss */
     #about .circle img {
       position: absolute; }
-  /* line 393, ../components/sass/_modules.scss */
+  /* line 394, ../components/sass/_modules.scss */
   #about .circle:before {
     background: url("../../_/images/gravatarBIG.jpg");
     background-size: 100%; }
+  /* line 399, ../components/sass/_modules.scss */
+  #about .resume {
+    width: 50%;
+    position: relative;
+    float: left; }
+    /* line 403, ../components/sass/_modules.scss */
+    #about .resume .action {
+      width: 75%; }
+  /* line 408, ../components/sass/_modules.scss */
+  #about .portfolio {
+    width: 50%;
+    position: relative;
+    float: left; }
+    /* line 412, ../components/sass/_modules.scss */
+    #about .portfolio .action {
+      width: 75%; }
+  /* line 416, ../components/sass/_modules.scss */
+  #about .resume-icon, #about .portfolio-icon {
+    width: 25%;
+    position: relative;
+    margin: 0 auto; }
 
-/* line 400, ../components/sass/_modules.scss */
-#contact {
+/* line 425, ../components/sass/_modules.scss */
+#hire {
   position: relative; }
+  /* line 428, ../components/sass/_modules.scss */
+  #hire .phone, #hire .email {
+    position: relative;
+    float: left;
+    margin-right: 2em;
+    height: 50px; }
+    /* line 433, ../components/sass/_modules.scss */
+    #hire .phone img, #hire .email img {
+      vertical-align: middle; }
+    /* line 436, ../components/sass/_modules.scss */
+    #hire .phone span, #hire .email span {
+      font-weight: normal; }
+  /* line 441, ../components/sass/_modules.scss */
+  #hire .number {
+    vertical-align: middle; }
+  /* line 445, ../components/sass/_modules.scss */
+  #hire .address {
+    display: inline-block; }

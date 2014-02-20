@@ -372,6 +372,7 @@ header ul li {
         position: relative;
         width: 100%;
         margin-top: 20px;
+        margin-bottom: 4em;
         float: left;
         text-align: center;
     }
@@ -395,8 +396,57 @@ header ul li {
     background-size: 100%;
     }
 
+    .resume {
+        width: 50%;
+        position: relative;
+        float: left;
+        .action {
+            width: 75%;
+        }
+    }
+
+    .portfolio {
+        width: 50%;
+        position: relative;
+        float: left;
+        .action {
+            width: 75%;
+        }
+    }
+    .resume-icon, .portfolio-icon {
+        width: 25%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+
 }
 
-#contact{
+#hire{
     position: relative;
+
+    .phone, .email {
+        position: relative;
+        float: left;
+        margin-right: 2em;
+        height: 50px;
+        img {
+            vertical-align: middle;
+        }
+        span {
+        font-weight: normal;
+        }
+    }
+
+    .number {
+        vertical-align: middle;
+    }
+
+    .address {
+        display: inline-block;
+    }
+
 }
+
+
+
