@@ -11,5 +11,8 @@
 
         // Circle Image fill
         $('.logo-container').imagefill();
+
+        $('.rotate').textrotator();
+
     });
 

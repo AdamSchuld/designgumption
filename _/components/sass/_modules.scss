@@ -388,6 +388,11 @@ header ul li {
         img {
             position: absolute;
         }
+
+    }
+    .circle:before {
+    background: url('../../_/images/gravatarBIG.jpg');
+    background-size: 100%;
     }
 
 }

@@ -337,6 +337,110 @@ a {
   .innerContent {
     width: 70%; } }
 
+/* line 1, ../components/sass/_rotator.scss */
+.rotating {
+  display: inline-block;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+  -moz-transform: rotateX(0) rotateY(0) rotateZ(0);
+  -ms-transform: rotateX(0) rotateY(0) rotateZ(0);
+  -o-transform: rotateX(0) rotateY(0) rotateZ(0);
+  transform: rotateX(0) rotateY(0) rotateZ(0);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin-x: 50%; }
+
+/* line 21, ../components/sass/_rotator.scss */
+.rotating.flip {
+  position: relative; }
+
+/* line 25, ../components/sass/_rotator.scss */
+.rotating .front, .rotating .back {
+  left: 0;
+  top: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+/* line 35, ../components/sass/_rotator.scss */
+.rotating .front {
+  position: absolute;
+  display: inline-block;
+  -webkit-transform: translate3d(0, 0, 1px);
+  -moz-transform: translate3d(0, 0, 1px);
+  -ms-transform: translate3d(0, 0, 1px);
+  -o-transform: translate3d(0, 0, 1px);
+  transform: translate3d(0, 0, 1px); }
+
+/* line 45, ../components/sass/_rotator.scss */
+.rotating.flip .front {
+  z-index: 1; }
+
+/* line 49, ../components/sass/_rotator.scss */
+.rotating .back {
+  display: block;
+  opacity: 0; }
+
+/* line 54, ../components/sass/_rotator.scss */
+.rotating.spin {
+  -webkit-transform: rotate(360deg) scale(0);
+  -moz-transform: rotate(360deg) scale(0);
+  -ms-transform: rotate(360deg) scale(0);
+  -o-transform: rotate(360deg) scale(0);
+  transform: rotate(360deg) scale(0); }
+
+/* line 64, ../components/sass/_rotator.scss */
+.rotating.flip .back {
+  z-index: 2;
+  display: block;
+  opacity: 1;
+  -webkit-transform: rotateY(180deg) translate3d(0, 0, 0);
+  -moz-transform: rotateY(180deg) translate3d(0, 0, 0);
+  -ms-transform: rotateY(180deg) translate3d(0, 0, 0);
+  -o-transform: rotateY(180deg) translate3d(0, 0, 0);
+  transform: rotateY(180deg) translate3d(0, 0, 0); }
+
+/* line 76, ../components/sass/_rotator.scss */
+.rotating.flip.up .back {
+  -webkit-transform: rotateX(180deg) translate3d(0, 0, 0);
+  -moz-transform: rotateX(180deg) translate3d(0, 0, 0);
+  -ms-transform: rotateX(180deg) translate3d(0, 0, 0);
+  -o-transform: rotateX(180deg) translate3d(0, 0, 0);
+  transform: rotateX(180deg) translate3d(0, 0, 0); }
+
+/* line 84, ../components/sass/_rotator.scss */
+.rotating.flip.cube .front {
+  -webkit-transform: translate3d(0, 0, 100px) scale(0.9, 0.9);
+  -moz-transform: translate3d(0, 0, 100px) scale(0.85, 0.85);
+  -ms-transform: translate3d(0, 0, 100px) scale(0.85, 0.85);
+  -o-transform: translate3d(0, 0, 100px) scale(0.85, 0.85);
+  transform: translate3d(0, 0, 100px) scale(0.85, 0.85); }
+
+/* line 92, ../components/sass/_rotator.scss */
+.rotating.flip.cube .back {
+  -webkit-transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.9, 0.9);
+  -moz-transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+  -ms-transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+  -o-transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+  transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85); }
+
+/* line 100, ../components/sass/_rotator.scss */
+.rotating.flip.cube.up .back {
+  -webkit-transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.9, 0.9);
+  -moz-transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+  -ms-transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+  -o-transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+  transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85); }
+
 /* line 1, ../components/sass/_modules.scss */
 a {
   text-decoration: none; }
@@ -723,7 +827,11 @@ header ul li {
     /* line 388, ../components/sass/_modules.scss */
     #about .circle img {
       position: absolute; }
+  /* line 393, ../components/sass/_modules.scss */
+  #about .circle:before {
+    background: url("../../_/images/gravatarBIG.jpg");
+    background-size: 100%; }
 
-/* line 395, ../components/sass/_modules.scss */
+/* line 400, ../components/sass/_modules.scss */
 #contact {
   position: relative; }
