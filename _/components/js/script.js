@@ -20,7 +20,7 @@
         owl.owlCarousel({
             itemsCustom : [
                 [0, 1],
-                [640, 2],
+                [465, 2],
                 [1080, 3]
             ],
             navigation : true

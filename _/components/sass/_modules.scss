@@ -15,13 +15,15 @@ h2 {
 p {
     font-size: 18px;
     line-height: 1.8;
+     @include MQ(XSplus){
+        font-size: 13px;
+    }
     @include MQ(Mplus){
-       font-size: 16px;
+        font-size: 15px;
     }
     @include MQ(XLplus){
-       font-size: 19px;
+        font-size: 18px;
     }
-
 }
 
 
@@ -231,20 +233,28 @@ header ul li {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
      @include MQ(XSplus){
-        font-size: 16px;
+        font-size: 17px;
     }
     @include MQ(Mplus){
         font-size: 22px;
     }
     @include MQ(XLplus){
-        font-size: 31px;
+        font-size: 34px;
         bottom: 265px;
     }
 }
 
 #projects {
-    margin-top: 150px;
     margin-bottom: 150px;
+    @include MQ(XSplus){
+        margin-top: 60px
+    }
+    @include MQ(Mplus){
+        margin-top: 80px
+    }
+    @include MQ(XLplus){
+        margin-top: 150px
+    }
 
     .diagonal-banner {
         width: 100%;
@@ -294,6 +304,17 @@ header ul li {
 
     .circle {
         left: 2em;
+         @include MQ(XSplus){
+            padding: 24%;
+            left: 5em;
+         }
+         @include MQ(Splus){
+            left: 3em;
+         }
+         @include MQ(Mplus){
+            padding: 33%;
+            left: 2em;
+        }
 
         transition-property: border;
         transition-duration: 0.5s;
@@ -316,6 +337,11 @@ header ul li {
                 font-weight: 500;
                  @include MQ(XSplus){
                     font-size: 16px;
+                    padding-top: 8px;
+                }
+                @include MQ(Splus){
+                    padding-top: 4px;
+                    font-size: 14px;
                 }
                 @include MQ(Mplus){
                     font-size: 20px;
@@ -332,6 +358,10 @@ header ul li {
         position: relative;
         margin-top: 30px;
         padding: 0 5px 0 5px;
+        @include MQ(XLplus){
+           padding: 0 10px 0 10px;
+        }
+
     }
 
     .action {
@@ -340,6 +370,10 @@ header ul li {
         margin-top: 10px;
         @include MQ(XSplus){
             font-size: 14px;
+            width: 50%;
+        }
+        @include MQ(Splus){
+            width: 75%;
         }
         @include MQ(Mplus){
             font-size: 16px;
