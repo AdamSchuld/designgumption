@@ -42,6 +42,13 @@ header .tab {
     padding: 10px 20px;
 }
 
+.left-right {
+    position: absolute;
+    height: 150px;
+}
+
+
+
 /*header ul {
     float: right;
     padding-top: 3px;
@@ -102,7 +109,15 @@ header ul li {
     border-radius:50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
-    -khtml-border-radius: 50%;
+  background: -moz-linear-gradient(45deg,  rgba(31,30,102,0.09) 0%, rgba(85,84,139,0.04) 24%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(31,30,102,0.09)), color-stop(24%,rgba(85,84,139,0.04)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(45deg,  rgba(31,30,102,0.09) 0%,rgba(85,84,139,0.04) 24%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(45deg,  rgba(31,30,102,0.09) 0%,rgba(85,84,139,0.04) 24%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(45deg,  rgba(31,30,102,0.09) 0%,rgba(85,84,139,0.04) 24%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(45deg,  rgba(31,30,102,0.09) 0%,rgba(85,84,139,0.04) 24%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
 }
 
 
@@ -246,6 +261,7 @@ header ul li {
 
 #projects {
     margin-bottom: 150px;
+    position: relative;
     @include MQ(XSplus){
         margin-top: 60px
     }
@@ -254,6 +270,97 @@ header ul li {
     }
     @include MQ(XLplus){
         margin-top: 150px
+    }
+
+    .left-right {
+        top: 25px;
+        width: 97%;
+    }
+
+    .left-btn {
+        position: absolute;
+        left: -55px;
+        height: 100%;
+        width: 40px;
+        cursor: pointer;
+    }
+
+    .left-btn:hover .arrow-left {
+        border-right: 20px solid $limegreen;
+        margin-left: -6px;
+    }
+
+    .left-btn:hover .arrow-left-overlay {
+        margin-left: -4px;
+    }
+
+    .right-btn:hover .arrow-right {
+        border-left: 20px solid $limegreen;
+        margin-left: 6px;
+    }
+
+    .right-btn:hover .arrow-right-overlay {
+        margin-left: 4px;
+    }
+
+
+    .arrow-left {
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-right:20px solid $deeppurple;
+        position: absolute;
+        top: 35%;
+        transition-property: border-right, margin-left;
+        transition-duration: 0.3s;
+    }
+
+    .arrow-left-overlay {
+        position: absolute;
+        margin-left: 1px;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-right:20px solid white;
+        top: 35%;
+        transition-property: margin-left;
+        transition-duration: 0.3s;
+    }
+
+    .right-btn {
+        position: absolute;
+        right: -55px;
+        height: 100%;
+        width: 40px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left:20px solid $deeppurple;
+        position: absolute;
+        top: 35%;
+        transition-property: border-left, margin-left;
+        transition-duration: 0.3s;
+    }
+
+    .arrow-right-overlay {
+        position: absolute;
+        margin-left: -1px;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left:20px solid white;
+        top: 35%;
+        transition-property: margin-left;
+        transition-duration: 0.3s;
     }
 
     .diagonal-banner {
@@ -317,7 +424,7 @@ header ul li {
         }
 
         transition-property: border;
-        transition-duration: 0.5s;
+        transition-duration: 0.3s;
 
             img {
                 position: absolute;
@@ -377,7 +484,7 @@ header ul li {
         }
         @include MQ(Mplus){
             font-size: 16px;
-            letter-spacing: .1em;
+            letter-spacing: .05em;
         }
         @include MQ(XLplus){
             font-size: 20px;

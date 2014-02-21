@@ -18,12 +18,24 @@
         // Owl Carousel
         var owl = $('.owl-carousel');
         owl.owlCarousel({
+            autoPlay : true,
+            stopOnHover : true,
+            paginationSpeed : 800,
             itemsCustom : [
                 [0, 1],
                 [465, 2],
                 [1080, 3]
             ],
-            navigation : true
+            pagination : false
+        });
+
+        // Owl Custom Pagination Handlers
+        $('.right-btn').click(function(){
+            owl.trigger('owl.next');
+        });
+
+        $('.left-btn').click(function(){
+            owl.trigger('owl.prev');
         });
     });
 
