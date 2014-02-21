@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".menu-link").bigSlide(),$(".inverted-triangle").imagefill(),$(".logo-container").imagefill(),$(".rotate").textrotator()});
+$(document).ready(function(){$(".menu-link").bigSlide(),$(".inverted-triangle").imagefill(),$(".logo-container").imagefill(),$(".rotate").textrotator();var a=$(".owl-carousel");a.owlCarousel({itemsCustom:[[0,1],[640,2],[1080,3]],navigation:!0})});

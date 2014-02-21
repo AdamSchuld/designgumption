@@ -12,7 +12,18 @@
         // Circle Image fill
         $('.logo-container').imagefill();
 
+        // Text Rotator on User Experience
         $('.rotate').textrotator();
 
+        // Owl Carousel
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            itemsCustom : [
+                [0, 1],
+                [640, 2],
+                [1080, 3]
+            ],
+            navigation : true
+        });
     });
 
