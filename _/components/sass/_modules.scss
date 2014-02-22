@@ -582,13 +582,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
         }
         @include MQ(Splus){
             font-size: 22px;
-            width: 65%;
         }
         @include MQ(Mplus){
             font-size: 26px;
             text-align: left;
         }
         @include MQ (MidMplus){
+            width: 65%;
             text-align: center;
             float: right;
         }
@@ -649,8 +649,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
     }
 
     .action {
-        width: 75%;
+        width: 80%;
         letter-spacing: .05em;
+        font-size: 24px;
+
+        @include MQ(XSplus){
+            font-size: 14px;
+        }
+        @include MQ(Splus){
+            font-size: 18px;
+        }
+         @include MQ(Lplus){
+                width: 50%;
+        }
     }
 
     .resume {
@@ -669,7 +680,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
         width: 25%;
         position: relative;
         margin: 0 auto;
+
+        img {
+            @include MQ(XSplus){
+                width: 90%;
+            }
+            @include MQ(Mplus){
+                width: 90%;
+            }
+        }
+
     }
+
 
 
 }
