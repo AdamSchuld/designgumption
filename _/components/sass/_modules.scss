@@ -6,6 +6,7 @@ h1 {
     font-family: $font-title;
     font-size: 40px;
     letter-spacing: 4.4px;
+    font-weight: normal;
 }
 
 h2 {
@@ -16,7 +17,7 @@ p {
     font-size: 18px;
     line-height: 1.8;
      @include MQ(XSplus){
-        font-size: 13px;
+        font-size: 14px;
     }
     @include MQ(Mplus){
         font-size: 15px;
@@ -241,7 +242,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
 .explanation h2 {
     display: block;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
     font-weight: 500;
     background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#3e3d4d), color-stop(31%,#3e3d4d), color-stop(96%,#7d7ca3)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(-45deg, #3e3d4d 0%,#3e3d4d 31%,#7d7ca3 96%); /* Chrome10+,Safari5.1+ */
@@ -249,13 +250,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
     -webkit-text-fill-color: transparent;
      @include MQ(XSplus){
         font-size: 17px;
+        margin-top: 25px;
     }
     @include MQ(Mplus){
         font-size: 22px;
+        margin-top: 35px;
     }
     @include MQ(XLplus){
         font-size: 34px;
         bottom: 265px;
+        margin-top: 60px;
     }
 }
 
@@ -263,13 +267,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
     margin-bottom: 150px;
     position: relative;
     @include MQ(XSplus){
-        margin-top: 60px
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
     @include MQ(Mplus){
-        margin-top: 80px
+        margin-top: 80px;
     }
     @include MQ(XLplus){
-        margin-top: 150px
+        margin-top: 150px;
     }
 
     .left-right {
@@ -420,7 +425,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
          }
          @include MQ(Mplus){
             padding: 33%;
-            left: 2em;
+            left: 2.4em;
         }
 
         transition-property: border;
@@ -465,8 +470,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
         position: relative;
         margin-top: 30px;
         padding: 0 5px 0 5px;
+        @include MQ(Splus){
+            height: 150px;
+        }
+        @include MQ(Mplus){
+            height: 160px;
+        }
+        @include MQ(MidMplus){
+            height: 120px;
+        }
+        @include MQ(Lplus){
+            height: 150px;
+        }
         @include MQ(XLplus){
            padding: 0 10px 0 10px;
+           height: 235px;
+           overflow: hidden;
         }
 
     }
@@ -502,17 +521,51 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
     overflow: hidden;
 
     .description {
-        float: right;
         width: 70%;
+        float: right;
+        @include MQ(XSplus){
+            float: left;
+            width: 100%;
+            margin-top: 230px;
+        }
+        @include MQ(Mplus){
+            font-size: 16px;
+            margin-top: 0px;
+            letter-spacing: .05em;
+        }
+        @include MQ(XLplus){
+            font-size: 20px;
+        }
+
     }
 
     h2 {
         font-weight: normal;
     }
 
+    .intro {
+        @include MQ(XS){
+           font-size: 21px;
+        }
+        @include MQ(Splus){
+        }
+        @include MQ(Mplus){
+        }
+        @include MQ(XLplus){
+        }
+
+    }
+
     .background {
-        float: right;
-        margin-left: 3em;
+        @include MQ(XSplus){
+             float: left;
+             margin-left: 0px;
+        }
+        @include MQ(Mplus){
+            float: right;
+            margin-left: 3em;
+            width: 60%;
+        }
     }
 
     .outro {
@@ -523,6 +576,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
         margin-bottom: 2em;
         float: left;
         text-align: center;
+        @include MQ(XSplus){
+            font-size: 26px;
+            text-align: left;
+        }
+        @include MQ(Splus){
+            font-size: 22px;
+            width: 65%;
+        }
+        @include MQ(Mplus){
+            font-size: 26px;
+            text-align: left;
+        }
+        @include MQ (MidMplus){
+            text-align: center;
+            float: right;
+        }
+        @include MQ (XLplus){
+            font-size: 30px;
+        }
+
     }
 
     .circle-container {
@@ -530,9 +603,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
         height: auto;
         position: absolute;
         top: 8%;
+        @include MQ(XStoM){
+            top: 0;
+            width: 100%;
+        }
+        @include MQ(Splus){
+
+        }
+        @include MQ(Mplus){
+            top: 80px;
+        }
+        @include MQ(Lplus){
+
+        }
+
     }
 
     .circle {
+
+        @include MQ(XS){
+            left: 15%;
+        }
+        @include MQ(Splus){
+            padding: 25%;
+            left: 23%;
+        }
+        @include MQ(Mplus){
+            padding: 40%;
+            top: 35px;
+            left: 0;
+        }
+        @include MQ(XLplus){
+            padding: 36%;
+        }
+
+
         img {
             position: absolute;
         }
@@ -543,22 +648,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
     background-size: 100%;
     }
 
+    .action {
+        width: 75%;
+        letter-spacing: .05em;
+    }
+
     .resume {
         width: 50%;
         position: relative;
         float: left;
-        .action {
-            width: 75%;
-        }
+
     }
 
     .portfolio {
         width: 50%;
         position: relative;
         float: left;
-        .action {
-            width: 75%;
-        }
     }
     .resume-icon, .portfolio-icon {
         width: 25%;
