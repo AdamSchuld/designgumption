@@ -544,14 +544,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
     }
 
     .intro {
-        @include MQ(XS){
-           font-size: 21px;
-        }
-        @include MQ(Splus){
+        @include MQ(XSplus){
+            font-size: 18px;
         }
         @include MQ(Mplus){
+            font-size: 21px;
         }
         @include MQ(XLplus){
+            font-size: 23px;
         }
 
     }
@@ -577,7 +577,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
         float: left;
         text-align: center;
         @include MQ(XSplus){
-            font-size: 26px;
+            font-size: 20px;
             text-align: left;
         }
         @include MQ(Splus){
@@ -621,7 +621,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
 
     .circle {
 
-        @include MQ(XS){
+        @include MQ(XSplus){
             left: 15%;
         }
         @include MQ(Splus){
@@ -660,7 +660,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
             font-size: 18px;
         }
          @include MQ(Lplus){
-                width: 50%;
+                width: 65%;
+        }
+        @include MQ(XLplus){
+                width: 55%;
         }
     }
 
@@ -700,30 +703,54 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
     position: relative;
     margin-top: 50px;
     text-align: center;
+    @include MQ(XSplus){
+        margin-left: 0;
+    }
+    @include MQ(Mplus){
+        margin-left: 8%;
+    }
+
+
     h2 {
         font-weight: normal;
         text-align: left;
-        padding-left: 20%;
+        margin: 1.5em auto;
+        @include MQ(XSplus){
+            font-size: 18px;
+        }
+        @include MQ(Splus){
+            font-size: 20px;
+        }
     }
 
 
     .phone, .email {
         position: relative;
         float: left;
-        margin-right: 3em;
+        margin-right: 0;
         height: 50px;
+        @include MQ(Mplus){
+            margin-right: 3em;
+        }
+
+
+
+
         img {
             vertical-align: middle;
+            @include MQ(XS){
+                width: 36px;
+            }
         }
         span {
         font-weight: normal;
         }
+
+
     }
 
     .contact-info {
-        width: 60%;
         height: 50px;
-        margin: 0 auto;
     }
     .number {
         vertical-align: middle;
@@ -739,6 +766,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
         margin: 30px auto 0 auto;
         width: 100%;
         float: left;
+
+        //CSS Triangle
+   /* width: 0px;
+    height: 0px;
+    border-style: inset;
+    border-width: 173.2px 100px 0 100px;
+    border-color: $limegreen transparent transparent transparent;
+    float: left;
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -o-transform:rotate(360deg);*/
+
+
+
         .btn {
             transition-property: background, color;
             transition-duration: 0.5s;

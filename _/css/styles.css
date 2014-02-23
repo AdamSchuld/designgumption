@@ -1151,10 +1151,18 @@ header ul li {
   /* line 542, ../components/sass/_modules.scss */
   #about h2 {
     font-weight: normal; }
-  @media only screen and (min-width: 22em) and (max-width: 28em) {
+  @media only screen and (min-width: 22em) {
+    /* line 546, ../components/sass/_modules.scss */
+    #about .intro {
+      font-size: 18px; } }
+  @media only screen and (min-width: 37em) {
     /* line 546, ../components/sass/_modules.scss */
     #about .intro {
       font-size: 21px; } }
+  @media only screen and (min-width: 80em) {
+    /* line 546, ../components/sass/_modules.scss */
+    #about .intro {
+      font-size: 23px; } }
   @media only screen and (min-width: 22em) {
     /* line 559, ../components/sass/_modules.scss */
     #about .background {
@@ -1178,7 +1186,7 @@ header ul li {
     @media only screen and (min-width: 22em) {
       /* line 571, ../components/sass/_modules.scss */
       #about .outro {
-        font-size: 26px;
+        font-size: 20px;
         text-align: left; } }
     @media only screen and (min-width: 29em) {
       /* line 571, ../components/sass/_modules.scss */
@@ -1214,7 +1222,7 @@ header ul li {
       /* line 601, ../components/sass/_modules.scss */
       #about .circle-container {
         top: 80px; } }
-  @media only screen and (min-width: 22em) and (max-width: 28em) {
+  @media only screen and (min-width: 22em) {
     /* line 622, ../components/sass/_modules.scss */
     #about .circle {
       left: 15%; } }
@@ -1256,87 +1264,124 @@ header ul li {
     @media only screen and (min-width: 62em) {
       /* line 651, ../components/sass/_modules.scss */
       #about .action {
-        width: 50%; } }
-  /* line 667, ../components/sass/_modules.scss */
+        width: 65%; } }
+    @media only screen and (min-width: 80em) {
+      /* line 651, ../components/sass/_modules.scss */
+      #about .action {
+        width: 55%; } }
+  /* line 670, ../components/sass/_modules.scss */
   #about .resume {
     width: 50%;
     position: relative;
     float: left; }
-  /* line 674, ../components/sass/_modules.scss */
+  /* line 677, ../components/sass/_modules.scss */
   #about .portfolio {
     width: 50%;
     position: relative;
     float: left; }
-  /* line 679, ../components/sass/_modules.scss */
+  /* line 682, ../components/sass/_modules.scss */
   #about .resume-icon, #about .portfolio-icon {
     width: 25%;
     position: relative;
     margin: 0 auto; }
     @media only screen and (min-width: 22em) {
-      /* line 684, ../components/sass/_modules.scss */
+      /* line 687, ../components/sass/_modules.scss */
       #about .resume-icon img, #about .portfolio-icon img {
         width: 90%; } }
     @media only screen and (min-width: 37em) {
-      /* line 684, ../components/sass/_modules.scss */
+      /* line 687, ../components/sass/_modules.scss */
       #about .resume-icon img, #about .portfolio-icon img {
         width: 90%; } }
 
-/* line 699, ../components/sass/_modules.scss */
+/* line 702, ../components/sass/_modules.scss */
 #hire {
   position: relative;
   margin-top: 50px;
   text-align: center; }
-  /* line 703, ../components/sass/_modules.scss */
+  @media only screen and (min-width: 22em) {
+    /* line 702, ../components/sass/_modules.scss */
+    #hire {
+      margin-left: 0; } }
+  @media only screen and (min-width: 37em) {
+    /* line 702, ../components/sass/_modules.scss */
+    #hire {
+      margin-left: 8%; } }
+  /* line 714, ../components/sass/_modules.scss */
   #hire h2 {
     font-weight: normal;
     text-align: left;
-    padding-left: 20%; }
-  /* line 710, ../components/sass/_modules.scss */
+    margin: 1.5em auto; }
+    @media only screen and (min-width: 22em) {
+      /* line 714, ../components/sass/_modules.scss */
+      #hire h2 {
+        font-size: 18px; } }
+    @media only screen and (min-width: 29em) {
+      /* line 714, ../components/sass/_modules.scss */
+      #hire h2 {
+        font-size: 20px; } }
+  /* line 727, ../components/sass/_modules.scss */
   #hire .phone, #hire .email {
     position: relative;
     float: left;
-    margin-right: 3em;
+    margin-right: 0;
     height: 50px; }
-    /* line 715, ../components/sass/_modules.scss */
+    @media only screen and (min-width: 37em) {
+      /* line 727, ../components/sass/_modules.scss */
+      #hire .phone, #hire .email {
+        margin-right: 3em; } }
+    /* line 739, ../components/sass/_modules.scss */
     #hire .phone img, #hire .email img {
       vertical-align: middle; }
-    /* line 718, ../components/sass/_modules.scss */
+      @media only screen and (min-width: 22em) and (max-width: 28em) {
+        /* line 739, ../components/sass/_modules.scss */
+        #hire .phone img, #hire .email img {
+          width: 36px; } }
+    /* line 745, ../components/sass/_modules.scss */
     #hire .phone span, #hire .email span {
       font-weight: normal; }
-  /* line 723, ../components/sass/_modules.scss */
+  /* line 752, ../components/sass/_modules.scss */
   #hire .contact-info {
-    width: 60%;
-    height: 50px;
-    margin: 0 auto; }
-  /* line 728, ../components/sass/_modules.scss */
+    height: 50px; }
+  /* line 755, ../components/sass/_modules.scss */
   #hire .number {
     vertical-align: middle; }
-  /* line 732, ../components/sass/_modules.scss */
+  /* line 759, ../components/sass/_modules.scss */
   #hire .address {
     display: inline-block; }
-  /* line 735, ../components/sass/_modules.scss */
+  /* line 762, ../components/sass/_modules.scss */
   #hire .hire-me {
     font-size: 30px;
     font-weight: 500;
     position: relative;
     margin: 30px auto 0 auto;
     width: 100%;
-    float: left; }
-    /* line 742, ../components/sass/_modules.scss */
+    float: left;
+    /* width: 0px;
+     height: 0px;
+     border-style: inset;
+     border-width: 173.2px 100px 0 100px;
+     border-color: $limegreen transparent transparent transparent;
+     float: left;
+     transform:rotate(360deg);
+     -ms-transform:rotate(360deg);
+     -moz-transform:rotate(360deg);
+     -webkit-transform:rotate(360deg);
+     -o-transform:rotate(360deg);*/ }
+    /* line 785, ../components/sass/_modules.scss */
     #hire .hire-me .btn {
       transition-property: background, color;
       transition-duration: 0.5s; }
-  /* line 749, ../components/sass/_modules.scss */
+  /* line 792, ../components/sass/_modules.scss */
   #hire .btn:hover {
     background: #00ff07;
     color: white; }
 
-/* line 756, ../components/sass/_modules.scss */
+/* line 799, ../components/sass/_modules.scss */
 .footer {
   color: #b2b2b2;
   background: #535267;
   margin-top: 30px; }
-  /* line 760, ../components/sass/_modules.scss */
+  /* line 803, ../components/sass/_modules.scss */
   .footer p {
     margin: 0;
     font-size: 10px; }

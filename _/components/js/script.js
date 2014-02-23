@@ -18,8 +18,6 @@
         // Owl Carousel
         var owl = $('.owl-carousel');
         owl.owlCarousel({
-            autoPlay : true,
-            stopOnHover : true,
             paginationSpeed : 800,
             itemsCustom : [
                 [0, 1],
