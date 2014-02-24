@@ -16,20 +16,15 @@
        <script src="_/js/jquery.simple-text-rotator.min.js"></script>
 </head>
 <body>
-    <nav id="menu" class="panel" role="navigation">
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#hire">HIRE</a></li>
-                </ul>
-    </nav>
-    <header role="banner">
-        <div class="inner-header">
-            <img src="" alt="Design Gumption logo">
-            <a href="#menu" class="menu-link"><img class="tab push" src="_/images/menu-tab.svg" alt="Menu Tab"></a>
-        </div>
-    </header>
+    <nav id="bt-menu" class="bt-menu">
+    <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+    <ul>
+        <li><a href="#" class="bt-icon">Home</a></li>
+        <li><a href="#projects" class="bt-icon">Projects</a></li>
+        <li><a href="#about" class="bt-icon">About</a></li>
+        <li><a href="#hire" class="bt-icon">Contact</a></li>
+    </ul>
+</nav>
 
 
     <div class="innerContent push">
@@ -191,6 +186,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="_/js/classie.js"></script>
     <script src="_/js/big-slide.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/2.1.0/jquery.imagesloaded.min.js"></script>
     <script src="_/js/jquery-imagefill.js"></script>
