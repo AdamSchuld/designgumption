@@ -280,6 +280,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
     .left-right {
         top: 25px;
         width: 97%;
+        @include MQ(XSplus){
+           top: -15px;
+        }
+         @include MQ(Mplus){
+           top: 15px;
+        }
     }
 
     .left-btn {
@@ -288,6 +294,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
         height: 100%;
         width: 40px;
         cursor: pointer;
+         @include MQ(XSplus){
+           left: 15px;
+        }
+        @include MQ(XSplus){
+           left:  0;
+        }
+        @include MQ(Lplus){
+           left: -55px;
+        }
     }
 
     .left-btn:hover .arrow-left {
@@ -341,6 +356,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
         width: 40px;
         cursor: pointer;
         z-index: 1000;
+        @include MQ(XSplus){
+            right: -25px;
+        }
+        @include MQ(Lplus){
+            right: -85px;
+        }
     }
 
     .arrow-right {
