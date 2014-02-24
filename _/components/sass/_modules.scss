@@ -27,6 +27,10 @@ p {
     }
 }
 
+.banner {
+    height: 40px;
+}
+
 
 header {
     color: $medpurple;
@@ -35,7 +39,9 @@ header {
 }
 
 header .tab {
-    float: left;
+    float: right;
+    position: relative;
+    top: 10px;
 }
 
 .btn {
@@ -74,6 +80,10 @@ header ul li {
         width: 70%;
     }
 }*/
+
+.innerContent {
+    position: relative;
+}
 
 .action {
     text-align: center;
@@ -123,12 +133,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
 
 
 .panel {
-  background: blue;
+  background: rgb(42, 58, 73);
   z-index: 9999;
+  position: fixed;
+  right: -10em;
 }
 
 .panel ul {
-    border-top: 2px solid red;
     width: 100%;
     padding: 0;
 }
@@ -140,10 +151,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
     padding: 0;
 }
 
+.panel a:hover {
+    border-bottom: 1px solid $limegreen;
+}
+
 .panel li a {
     color: white;
     display: block;
-    padding: 1em;
+    margin: 1.2em;
+    border-bottom: 1px solid rgb(42, 58, 73);
+    transition-property: border-bottom;
+    transition-duration: 0.3s;
 }
 
 
@@ -388,15 +406,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
         transition-property: margin-left;
         transition-duration: 0.3s;
     }
-
-    .diagonal-banner {
-        width: 100%;
-        left: 0;
-        height: 150px;
-        position: absolute;
-        overflow: hidden;
-
-    }
     .owl-item {
         float: left;
     }
@@ -439,7 +448,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
         left: 2em;
          @include MQ(XSplus){
             padding: 24%;
-            left: 5em;
+            left: 4.5em;
          }
          @include MQ(Splus){
             left: 3em;
