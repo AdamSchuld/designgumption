@@ -1,6 +1,6 @@
 <!-- This is the file that will get minified -->
     // Navigation
-               (function() {
+    (function() {
 
     // http://stackoverflow.com/a/11381730/989439
     function mobilecheck() {
@@ -55,9 +55,6 @@
         // Slide panel navigation
         $('.menu-link').bigSlide();
 
-        // Image fill responsive image handling
-        $('.inverted-triangle').imagefill();
-
         // Image fill teaser banner
         //$('.diagonal-banner').imagefill();
 
@@ -70,7 +67,7 @@
         // Owl Carousel
         var owl = $('.owl-carousel');
         owl.owlCarousel({
-            paginationSpeed : 800,
+            slideSpeed : 600,
             itemsCustom : [
                 [0, 1],
                 [465, 2],

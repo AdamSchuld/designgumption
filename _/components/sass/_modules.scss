@@ -17,7 +17,7 @@ p {
     font-size: 18px;
     line-height: 1.8;
      @include MQ(XSplus){
-        font-size: 14px;
+        font-size: 13px;
     }
     @include MQ(Mplus){
         font-size: 15px;
@@ -93,6 +93,10 @@ header ul li {
     font-weight: 700;
 }
 
+.action:hover {
+        border-bottom: 2px solid $limegreen;
+}
+
 .circle {
     display:block;
     float:left;
@@ -142,7 +146,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
     height: 0;
     border-width: 0px;
     border-style: solid;
-    border-color: #333;
     background-color: rgba(0,0,0,0);
     -webkit-backface-visibility: hidden;
     -webkit-transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
@@ -194,6 +197,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
     user-select: none;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
+
+    @include MQ(Mplus){
+        width: 50%;
+        height: 5%;
+    }
+    @include MQ(XLplus){
+        width: 70%;
+        height: 7%;
+    }
+}
+
+.bt-menu-trigger:hover span {
+    background-color: $limegreen;
 }
 
 .bt-menu-trigger span:before,
@@ -248,7 +264,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
 
 .bt-menu ul:first-of-type {
     top: 75px;
-    left: 0;
+    left: -10em;
+}
+
+.bt-menu-open ul:first-of-type {
+    top: 75px;
+    left: 0em;
 }
 
 .bt-menu ul:nth-of-type(2) {
@@ -367,7 +388,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
 .bt-menu ul:first-of-type li a:focus,
 .bt-menu ul li a:hover:before,
 .bt-menu ul li a:focus:before {
-    color: #1abc9c;
+    color: adjust-lightness($limegreen, 30);
 }
 
 /*.panel {
@@ -407,13 +428,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
     margin: 0 auto;
     position: relative;
     margin-top: 30px;
-    height: auto;
     @include MQ(XSplus){
        height: 144px;
        margin-top: 10px;
     }
     @include MQ(Mplus){
        height: 216px;
+       /*width: 315px;*/
        margin-top: 20px;
     }
     @include MQ(XLplus){
@@ -423,19 +444,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
 }
 
 .inverted-triangle {
-    position: relative;
     margin: 0 auto;
-    @include MQ(XSplus){
-        width: 210px;
-        height: 144px;
-    }
-    @include MQ(Mplus){
-        width: 315px;
-        height: 216px;
-    }
-    @include MQ(XLplus){
-        width: 420px;
-        height: 288px;
+    background: url('../images/invertedTriangle.png');
+    background-size: contain;
+        @include MQ(XSplus){
+            width: 210px;
+            height: 144px;
+        }
+        @include MQ(Mplus){
+            width: 315px;
+            height: 216px;
+        }
+        @include MQ(XLplus){
+            width: 420px;
+            height: 288px;
     }
 }
 
@@ -444,12 +466,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
     top: -220px;
     display: block;
     margin: 0 auto;
-    width: 205px;
-    height: 205px;
     @include MQ(XSplus){
         width: 80px;
         height: 80px;
-          top: -150px;
+        top: -143px;
     }
     @include MQ(Mplus){
         width: 135px;
@@ -465,13 +485,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
 
 .eye-catcher h1 {
     position: relative;
-    bottom: 85px;
     margin: 0 auto;
     display: block;
     text-align: center;
     @include MQ(XSplus){
         font-size: 18px;
-        bottom: 135px;
+        bottom: 122px;
     }
     @include MQ(Mplus){
         font-size: 24px;
@@ -519,6 +538,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
     }
 }
 
+
 #projects {
     margin-bottom: 150px;
     position: relative;
@@ -546,6 +566,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
 
     .left-btn {
         position: absolute;
+        z-index: 9998;
         left: -55px;
         height: 100%;
         width: 40px;
@@ -984,10 +1005,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
         text-align: left;
         margin: 1.5em auto;
         @include MQ(XSplus){
-            font-size: 18px;
+            font-size: 15px;
         }
         @include MQ(Splus){
             font-size: 20px;
+        }
+         @include MQ(Lplus){
+            font-size: 25px;
         }
     }
 
