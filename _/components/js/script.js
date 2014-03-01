@@ -70,8 +70,8 @@
             slideSpeed : 600,
             itemsCustom : [
                 [0, 1],
-                [465, 2],
-                [1080, 3]
+                [595, 2],
+                [1295, 3]
             ],
             pagination : false
         });
