@@ -62,7 +62,12 @@
         $('.logo-container').imagefill();
 
         // Text Rotator on User Experience
-        $('.rotate').textrotator();
+        $('#analogy').wordsrotator({
+            speed: 5000,
+            words: ['what Gagnam Style is to Korea', 'what corn syrup is to Stretch Armstrong',
+            'what kids are to Trix', 'what doves are to rap videos', 'what dice are to Jumangi',
+            'what gravity is to trampolines']
+        });
 
         // Owl Carousel
         var owl = $('.owl-carousel');
