@@ -830,15 +830,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
         @include MQ(Mplus){
             font-size: 18px;
             letter-spacing: .05em;
-            margin-top: 40px;
-        }
-        @include MQ(Mplus){
-            margin-top: 60px;
+            margin-top: 20px;
         }
         @include MQ(XLplus){
             font-size: 20px;
-            margin-top: 20px;
         }
+
 
     }
 
