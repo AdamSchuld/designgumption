@@ -3444,9 +3444,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 /* line 196, ../components/sass/_lightbox.scss */
 #imagelightbox-nav a {
-  width: 10px;
+  width: 9px;
   /* 20 */
-  height: 10px;
+  height: 9px;
   /* 20 */
   border: 1px solid #fff;
   display: inline-block;
@@ -4289,7 +4289,7 @@ header ul li {
       /* line 739, ../components/sass/_modules.scss */
       #projects .circle {
         padding: 24%;
-        left: 5.3em; } }
+        left: 4.5em; } }
     @media only screen and (min-width: 29em) {
       /* line 739, ../components/sass/_modules.scss */
       #projects .circle {
@@ -4307,7 +4307,7 @@ header ul li {
       @media only screen and (min-width: 22em) {
         /* line 756, ../components/sass/_modules.scss */
         #projects .circle img {
-          margin-top: 15px; } }
+          margin-top: 10px; } }
       @media only screen and (min-width: 37em) {
         /* line 756, ../components/sass/_modules.scss */
         #projects .circle img {
@@ -4462,7 +4462,7 @@ header ul li {
     @media only screen and (min-width: 22em) {
       /* line 905, ../components/sass/_modules.scss */
       #about .outro {
-        font-size: 20px;
+        font-size: 18px;
         text-align: left; } }
     @media only screen and (min-width: 29em) {
       /* line 905, ../components/sass/_modules.scss */

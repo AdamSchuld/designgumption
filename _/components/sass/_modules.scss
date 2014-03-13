@@ -740,7 +740,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
         left: 2em;
          @include MQ(XSplus){
             padding: 24%;
-            left: 5.3em;
+            left: 4.5em;
          }
          @include MQ(Splus){
             left: 6em;
@@ -758,7 +758,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
                 width: 100px;
                 height: 80px;
                  @include MQ(XSplus){
-                    margin-top: 15px;
+                    margin-top: 10px;
                  }
                  @include MQ(Mplus){
                     margin-top: 5px;
@@ -911,7 +911,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
         float: left;
         text-align: center;
         @include MQ(XSplus){
-            font-size: 20px;
+            font-size: 18px;
             text-align: left;
         }
         @include MQ(Splus){
