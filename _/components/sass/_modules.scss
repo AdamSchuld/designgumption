@@ -22,9 +22,6 @@ p {
     @include MQ(Splus){
         font-size: 16px;
     }
-    @include MQ(Mplus){
-        font-size: 18px;
-    }
     @include MQ(XLplus){
         font-size: 20px;
     }
