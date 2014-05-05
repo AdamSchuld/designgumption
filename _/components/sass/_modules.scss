@@ -972,8 +972,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
 
     }
     .circle:before {
-    background: url('../../_/images/gravatarBIG.jpg');
-    background-size: 100%;
+    background: url('../../_/images/GreenNonThreatening.jpg');
+    background-size: cover;
     }
 
     .action {
@@ -1091,12 +1091,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f1e66', e
     .address {
         display: inline-block;
     }
-    .hire-me {
+    .hire-me, .follow-me {
         font-size: 30px;
         font-weight: 500;
         position: relative;
-        margin: 30px auto 0 auto;
-        width: 100%;
+        margin: 30px 30px 10px 0px;
         float: left;
 
         //CSS Triangle
