@@ -52,6 +52,12 @@
 
     // jQuery
     $(document).ready(function() {
+        $('.bt-icon').on('click', function(){
+            $('.bt-menu').removeClass('bt-menu-open').addClass('bt-menu-closed');
+        });
+
+
+
         // Slide panel navigation
         $('.menu-link').bigSlide();
 
